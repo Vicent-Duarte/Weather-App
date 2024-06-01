@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { getCiudadClima } from '../services/clima';
+import './styles/Buscador.css';
 
 const Buscador = ({ setClima, setErrorClima }) => {
     const [searchValue, setSearchValue] = useState('')

@@ -1,0 +1,19 @@
+.select__container {
+    width: 800vw;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .select {
+    width: 70vw;
+    height: 25px;
+    background-color: #e9e9e9;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #686767;
+  }

@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import { getPaises } from '../services/getPaises'
-import { getEstados } from '../services/getEstados'
-import { getCiudades } from '../services/getCiudades'
-import { getCiudadClima } from '../services/clima'
-import { getAuth } from '../services/getAuth'
+import React, { useEffect, useState } from 'react';
+import { getPaises } from '../services/getPaises';
+import { getEstados } from '../services/getEstados';
+import { getCiudades } from '../services/getCiudades';
+import { getCiudadClima } from '../services/clima';
+import { getAuth } from '../services/getAuth';
+import './styles/SelectCity.css';
 
 const SelectCity = ({ setClima, setErrorClima, }) => {
     const [paises, setPaises] = useState([])
@@ -106,4 +107,4 @@ const SelectCity = ({ setClima, setErrorClima, }) => {
     )
 }
 
-export default SelectCity
+export default SelectCity;

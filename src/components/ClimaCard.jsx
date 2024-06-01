@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import './styles/ClimaCard.css';
 
 const ClimaCard = ({ clima, setBgSelect, errorClima }) => {
     const [isCel, setIsCel] = useState(true)
     const [temp, setTemp] = useState()
     const [name, setName] = useState('Change to °F')
-
-
 
     useEffect(() => {
         if (clima) {
