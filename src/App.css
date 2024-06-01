@@ -1,0 +1,354 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: inherit;
+  background-image: linear-gradient(150deg, #00000031, #000000b1), url('https://wallpapercave.com/wp/wp4471392.jpg');
+  color: black;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-attachment: fixed;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui;
+}
+
+ul {
+  list-style: none;
+  line-height: 1.3;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #222222;
+  font-weight: bold;
+}
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.8s ease-out;
+}
+
+.loading__gif {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.app__container {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 80vw;
+  height: 50px;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(141, 140, 140, 0.829);
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+.header__title {
+  max-width: 100%;
+  font-size: 1.5rem;
+  color: black;
+}
+
+/* PARTE DE LA TARJETA */
+.clima__card {
+  position: fixed;
+  top: 41.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(177, 176, 176, 0.664);
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.card__title {
+  max-width: 80%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #222;
+}
+
+.clima__name {
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 21px;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.estado__clima {
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clima__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.climacard__item span:first-child{
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.climacard__item span:last-child{
+  color: #080000;
+  font-weight: 900;
+}
+
+.content__icon {
+  display: inline-block;
+  max-width: 130px;
+  max-height: 130px;
+  object-fit: contain;
+}
+
+.btn--temp {
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 25px;
+  border: 1px solid transparent;
+  background-color: #414141;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-size: 15px;
+  box-shadow: 1px 1px 5px 3px black;
+  padding: 0px 5px;
+}
+
+.temperatura {
+  color: black;
+}
+
+/* PARTE BUSCADOR */
+
+.app__search {
+  position: fixed;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  background-color: #d4d4d498;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #0c0c0c;
+  padding: 10px;
+}
+
+.select__container {
+  width: 80vw;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.search {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search__title {
+  font-size: 0.85rem;
+}
+
+.search__input {
+  width: 70%;
+  height: 55px;
+  background-color: #dbdbdb;
+  border: 1px solid transparent;
+  font-size: .8rem;
+  padding-left: 5px;
+}
+
+.btn--search {
+  width: 30%;
+  height: 25px;
+  border: 1px solid transparent;
+  background-color: #414141;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.select {
+  width: 70vw;
+  height: 25px;
+  background-color: #e9e9e9;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: .8rem;
+  font-weight: 600;
+  color: #686767;
+}
+
+.search__txt {
+  font-size: 0.65rem;
+  color: #383838;
+}
+
+/* PARTE ERROR  */
+.error__container {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #d4d4d498;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #222;
+  padding: 5px;
+  row-gap: 10px;
+}
+
+.error {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.logo {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.logo:hover {
+  background-color: #222;
+  border: 2px solid #fff;
+}
+
+@media (min-width: 700px) {
+
+  header {
+    max-width: 600px;
+  }
+
+  .clima__card {
+    max-width: 500px;
+  }
+
+  .app__search {
+    max-width: 600px;
+  }
+
+  .search {
+    max-width: 500px;
+  }
+
+  .select {
+    max-width: 500px;
+  }
+
+  .error__container {
+    max-width: 500px;
+  }
+
+  .card__title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+}
