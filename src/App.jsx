@@ -5,14 +5,15 @@ import LocalClimaCard from './components/LocalClimaCard.jsx';
 import ClimaCard from './components/ClimaCard.jsx';
 import Buscador from './components/Buscador.jsx';
 
+
+
 function App() {
 
   const [clima, setClima] = useState(null)
   const [bgSelect, setBgSelect] = useState('01')
   const [isLoading, setIsLoading] = useState(true)
   const [errorClima, setErrorClima] = useState(null)
-
-
+ 
   const bgSytle = {
     backgroundImage: `url(./assets/background/bg${bgSelect}.jpeg)`
   }

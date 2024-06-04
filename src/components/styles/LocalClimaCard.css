@@ -1,100 +1,96 @@
 .clima__card {
-    position: fixed;
-    top: 41.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70vw;
-    max-height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgba(177, 176, 176, 0.664);
-    border: 1px solid #fff;
-    border-radius: 20px;
-    padding: 5px;
-  }
-  
-  .card__title {
-    max-width: 80%;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10px;
-    font-size: 0.7rem;
-    text-align: center;
-    color: #222;
-  }
-  
-  .clima__name {
-    color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 21px;
-    margin-top: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .card__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .estado__clima {
-    color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .clima__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-  }
-  
-  .climacard__item span:first-child{
-    text-transform: capitalize;
-    font-weight: 500;
-  }
-  
-  .climacard__item span:last-child{
-    color: #080000;
-    font-weight: 900;
-  }
-  
-  .content__icon {
-    display: inline-block;
-    max-width: 130px;
-    max-height: 130px;
-    object-fit: contain;
-  }
-  
-  .btn--temp {
-    max-width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 25px;
-    border: 1px solid transparent;
-    background-color: #414141;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    font-size: 15px;
-    box-shadow: 1px 1px 5px 3px black;
-    padding: 0px 5px;
-  }
-  
-  .temperatura {
-    color: black;
-  }
+  width: 70vw;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(177, 176, 176, 0.664);
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.card__title {
+  max-width: 80%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #222;
+}
+
+.clima__name {
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 21px;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.estado__clima {
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clima__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.climacard__item span:first-child{
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.climacard__item span:last-child{
+  color: #080000;
+  font-weight: 900;
+}
+
+.content__icon {
+  display: inline-block;
+  max-width: 130px;
+  max-height: 130px;
+  object-fit: contain;
+}
+
+.btn--temp {
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 25px;
+  border: 1px solid transparent;
+  background-color: #414141;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-size: 15px;
+  box-shadow: 1px 1px 5px 3px black;
+  padding: 0px 5px;
+}
+
+.temperatura {
+  color: black;
+}
